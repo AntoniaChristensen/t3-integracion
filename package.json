@@ -17,16 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "postinstall": "node ./node_modules/husky/lib/installer/bin install"
+    "deploy": "gh-pages -d build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run deploy"
-    }
-},
   "eslintConfig": {
     "extends": [
       "react-app",
